@@ -1,13 +1,10 @@
-# Repo para EIEC - DevOps - UNIR
+# Palabras Ordenadas
 
-Este repositorio nos servirá para demostrar el uso de Git en la asignatura de EIEC y muchas cosas mas.
+Esta aplicación ordena una lista de palabras en un archivo de texto. 
 
----
+## Ejecución de Prueba
 
-Los comandos del Makefile funcionarán en Linux y MacOS. En caso de usar Windows, necesitarás adaptarlos o ejecutarlos en una máquina virtual Linux.
+Para ordenar palabras en un archivo `palabras.txt` en orden ascendente y eliminar duplicados, ejecuta el siguiente comando:
 
-## Ejecución
-
-python3 main.py <filename> <dup>
-  filename: **ruta** al fichero que contiene la lista de palabras, una por línea
-  dup: **yes|no**, yes para eliminar palabras duplicadas, no para mantener la lista
+```bash
+python ordenar_palabras.py palabras.txt --orden ascendente --eliminar-duplicados
